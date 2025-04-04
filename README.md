@@ -2,11 +2,18 @@
 
 Recruitease is a modern recruitment management platform designed to streamline the hiring process for HRs and provide a smooth interview experience for candidates. The platform allows HRs to schedule interviews and share interview links with candidates, who can join seamlessly.
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
+### **Frontend** – Angular 19  
+- **Angular & Forms**  
+- **HTTP Client for API communication**  
+- **CSS for styling & responsiveness**  
 
-- **Backend:** Spring Boot (with Hibernate ORM)
-- **Frontend:** Angular
-- **Database:** MySQL
+### **Backend** – Spring Boot  
+- **Spring Boot with RESTful API**  
+- **Spring Data JPA (for MySQL interactions)**    
+
+### **Database** – MySQL  
+- Stores **users**, **tasks**
 
 ## 💡 Features
 

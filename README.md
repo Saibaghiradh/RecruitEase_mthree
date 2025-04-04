@@ -20,7 +20,7 @@ Recruitease is a modern recruitment management platform designed to streamline t
 
 ### Prerequisites
 
-- Java 11+
+- Java 17
 - Node.js and Angular CLI
 - MySQL
 - Maven (for Spring Boot)

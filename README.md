@@ -4,7 +4,7 @@ Recruitease is a modern recruitment management platform designed to streamline t
 
 ## 🛠 Technologies Used
 ### **Frontend** – Angular 19  
-- **Angular & Forms**  
+- **Angular Forms**  
 - **HTTP Client for API communication**  
 - **CSS for styling & responsiveness**  
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forgot Page</title>
+  <link rel="stylesheet" href="forgot.component.css" />
+</head>
+<body>
+  <div class="login_form">
+    <!-- Login form container -->
+    <form action="#">
+        <img class="image" src="logo.svg" alt="Angular SV">
+
+      <!-- Login option separator -->
+      <p class="separator">
+        <span>Forgot Password</span>
+      </p>
+      <!-- Email input box -->
+      <div class="input_box">
+        <label for="email">Registered Email</label>
+        <input type="email" id="email" placeholder="Enter registered email address" required />
+      </div>
+      <!-- Paswwrod input box -->
+      <div class="input_box">
+        <div class="password_title">
+          <label for="password">Create new password</label>
+        </div>
+        <input type="password" id="password" placeholder="Enter new password" required />
+      </div>
+       <!-- Login button -->
+      <button type="submit">Change password</button>
+      <p class="sign_up">Don't have an account? <a routerLink="/register">Sign up</a></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Source Codes By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form </title>
+  <link rel="stylesheet" href="login.component.css" />
+</head>
+<body>
+  <div class="login_form">
+    <!-- Login form container -->
+    <form (ngSubmit) ="onLogin()">
+        <img class="image" src="logo.svg" alt="Angular SV">
+
+      <!-- Login option separator -->
+      <p class="separator">
+        <span>Login</span>
+      </p>
+      <!-- Email input box -->
+      <div class="input_box">
+        <label for="user-email">Username</label>
+        <input type="text" id="user-email" [(ngModel)]="loginData.uname" name="uname" placeholder="Enter username" required />
+      </div>
+      <!-- Paswwrod input box -->
+      <div class="input_box">
+        <div class="password_title">
+          <label for="user-password">Password</label>
+          <a routerLink="/forgot">Forgot Password?</a>
+        </div>
+        <input type="password" id="user-password" [(ngModel)]="loginData.password" name="password" placeholder="Enter your password" required />
+      </div>
+       <!-- Login button -->
+      <button type="submit">Log In</button>
+      <p class="sign_up">Don't have an account? <a routerLink="/register">Sign up</a></p>
+    </form>
+  </div>
+</body>
+</html>

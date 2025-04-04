@@ -1,0 +1,91 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="app.component.css"> <!-- Link to your global styles -->
+</head>
+
+<body *ngIf="!isOtherRoute()">
+  
+  <div  class="parent_div" >
+    <nav class="custom-navbar">
+      <a (click)="navigateToAdmin()">Admin</a>
+      <a (click)="scroll('about')" [class.active]="activeSection === 'about'">About</a>
+      <a (click)="scroll('services')" [class.active]="activeSection === 'services'">Services</a>
+      <a (click)="scroll('careers')" [class.active]="activeSection === 'careers'">Careers</a>
+   </nav>
+    <div class="dark-blue-bg">
+      <img src="logo.svg" alt="Angular SV" width="520" height="108">
+      <div class="buttons_div">
+        <button class="button" (click)="navigateToLogin()">Login</button>
+        <button class="button" (click)="navigateToRegister()">Register</button>
+      </div>
+    </div>
+  </div>
+  
+<div>
+  <section id="home" >
+    <h2>Home</h2>
+    <p>Welcome to our website!</p>
+  </section>
+  
+  <section id="about" style="text-align: center;">
+   
+    <div class="cursor typewriter-animation">Hire - Train - Deploy</div>
+  </section>
+  
+  
+  
+  <section id="services" #first name="services">
+    <h2>Services</h2>
+    <p>Talent & Training</p>
+    <div class="container">
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>01</h2>
+            <h3>Emerging Talent</h3>
+            <p>Our Hire Train Deploy model trains graduates with job-ready skills for your organization.</p>
+            <a href="https://mthree.com/services/hire-train-deploy/">Read More</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>02</h2>
+            <h3>Expert Talent</h3>
+            <p>Our Expert talent delivers immediate impact on your most critical projects.</p>
+            <a href="https://mthree.com/services/expert-talent/">Read More</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>03</h2>
+            <h3>Reskill</h3>
+            <p>We tailor our reskill training to align with your organisation's specific needs and skills gaps./p>
+            <a href="https://mthree.com/services/reskill-and-staff-training/">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="careers" #career name="careers" class="careers-section">   
+    <h2>Careers</h2><br><br>
+    <p>Join our team for exciting opportunities!</p>
+    <h3 class="apply-role">Apply for a role to start your career!</h3>
+    <p>Click on the link to check out the opportunities we have available.</p>
+    <p>If your application is successful, a member of our team will get in touch to let you know the next steps.</p>
+    <a href="https://mthree.com/careers/#jobs" class="view-jobs-button">View Jobs</a>
+  </section>
+</div>
+</body>
+
+<router-outlet></router-outlet>
+

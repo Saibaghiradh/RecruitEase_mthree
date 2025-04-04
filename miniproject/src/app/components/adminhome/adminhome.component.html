@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Form</title>
+    <link rel="stylesheet" href="adminhome.component.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Job Posting Form</h1>
+        <form (ngSubmit)="onJobPost()">
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" [(ngModel)]="post.cname" name="cname" required>
+
+            <label for="company-role">Company Role:</label>
+            <select id="company-role" [(ngModel)]="post.crole" name="crole"  required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="SRE">SRE</option>
+                <option value="SDE">SDE</option>
+                <option value="Testing">Testing</option>
+            </select>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills"  [(ngModel)]="post.skills" name="skills" required>
+
+            <label for="interview-link">Interview Link:</label>
+            <input type="url" id="interview-link" [(ngModel)]="post.link" name="link" placeholder="https://example.com" required>
+
+            <label for="interview-date">Interview Date:</label>
+            <input type="date" id="interview-date" [(ngModel)]="post.date" name="date" required>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>

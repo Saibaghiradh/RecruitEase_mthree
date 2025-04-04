@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.dark-blue-bg {
+   
+    color: white;
+    /* height: 100%;
+    width: 100%; */
+    display: flex;
+  /* border:1px solid #000; */
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    /* font-size: 50px; */
+    /* top: 0; */
+    gap:5rem;
+    position: relative; 
+     top: 195px;
+     right:20px
+  }
+  .parent_div{
+    background-color: rgb(20, 26, 70);
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    gap:3rem;
+
+  }
+.buttons_div{
+  display:flex;
+  gap:4rem;
+  align-items: center;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.button {
+  --color: #07e2dc;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 20px;
+  border: 1px dashed;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  width: 200px;
+
+ }
+ 
+ .button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+  
+
+ }
+ 
+ .button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .button:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .button:active {
+  filter: brightness(.8);
+ }
+ 
+
+
+ .custom-navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding:25px;
+  /* border:1px solid #fff; */
+  height: 80px;
+  width: 100%;
+  position:fixed;
+  right: 30px;
+  gap:2rem
+
+}
+
+.custom-navbar a {
+  color:#07e2dc;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 24px;
+  font-family: "semiBold";
+  font-weight: 600;
+
+}
+.custom-navbar a:hover {
+  color: #00bdb7;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "semiBold";
+
+}
+
+
+.content {
+  margin-top: 50px; /* Prevents overlap with fixed navbar */
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background:rgb(20, 26, 70);
+  color: white;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(181, 227, 255, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .box:hover {
+  transform: translateY(-50px);
+}
+
+.card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(52, 43, 43, 0.175);
+   /*  for number 1,2,3 */
+}
+
+.card .box .content h3 {
+  font-size: 1.5rem;
+  color: #100c0c;
+  text-align: center;
+  margin-bottom: 15px;
+  /* card one card Two */
+}
+
+.card .box .content p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(20, 16, 16, 0.9); 
+  /* Text in the card */
+}
+
+.card .box .content a {
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.card .box .content a:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* career */
+
+.careers-section {
+  background: linear-gradient(to right, #eeeeee, #ffffff); /* Subtle gradient background */
+  padding: 60px 40px; /* Increased padding for spacious feel */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+  text-align: center; /* Center aligned text */
+/* Positioning context for pseudo-elements */
+  overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+
+.careers-section h2 {
+  font-size: 2.8rem;
+  color: #333; /* Dark gray color */
+  margin-bottom: 20px;
+}
+
+.careers-section p {
+  font-size: 1.3rem;
+  color: #666; /* A lighter gray for contrast */
+  margin-bottom: 15px;
+}
+
+.apply-role {
+  font-size: 3rem; /* Larger font size for emphasis */
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(20, 26, 70); /* Deep purple color */
+  margin: 30px 0; /* Space above and below */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft text shadow */
+}
+
+.view-jobs-button {
+  display: inline-block;
+  padding: 12px 25px; /* Increased padding for a modern button */
+  background-color: rgb(20, 26, 70); /* Beautiful gradient base color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 30px; /* Circular button for a modern look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.view-jobs-button:hover {
+  background-color: #07e2dc; /* Darken color on hover for emphasis */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.careers-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(125, 42, 232, 0.1); /* Light translucency of the gradient */
+  border-radius: 15px; /* Match the border radius */
+  z-index: 0; /* Send background under text */
+}
+
+.careers-section h2,
+.careers-section p,
+.apply-role,
+.view-jobs-button {
+  position: relative; /* Relative positioning for layering with pseudo-element */
+  z-index: 1; /* Ensure text appears above background */
+}
+
+
+/* About Section */
+
+/* Google Fonts */
+
+
+/* Cursor */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures full height for vertical centering */
+  text-align: center;
+  color: rgb(20, 26, 70);
+}
+
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 70px;
+    text-align: center;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 20 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+/* Global */
+/* body { margin-top: 4em; padding: 5em; color: #f1f1f1; font-family: 'Anonymous Pro', monospace;background-color: #673ab7; } */
